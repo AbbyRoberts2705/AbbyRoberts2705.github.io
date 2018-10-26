@@ -1,0 +1,284 @@
+/*-------------------------- UNIVERSAL ------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+    line-height:2;
+    background:black;
+    font-size:15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+li {
+    list-style:none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.cfx::after {
+    content: " ";
+    display: block;
+    clear:both;
+}
+
+article {
+    text-align: left;
+}
+
+/*-------------------------- ARTICLE ------------------------------*/
+
+
+article {
+    height:100vh;
+    width:100%;
+        color:white;
+    display: table;
+    position:relative;
+}
+
+article > .container{
+    display: table-cell;
+    vertical-align: middle;
+    
+}
+
+/* TITLE */
+
+article.title {
+    background:black;
+    text-align: center;
+}
+
+article.title > img {
+    position:absolute;
+    margin:20px;
+    right:0;
+}
+
+article.title > .container > h1 {
+    font-size:40px;
+    margin: 0 auto;
+    border: white 3px solid;
+    width:380px;
+    
+}
+
+article.title > .container > h1 > span {
+    font-size:60px;
+}
+
+article.title > .container > p{
+    margin-top:30px;
+}
+
+
+
+/* TABLE OF CONTENTS */
+
+article.toc > .container {
+    background: white;
+}
+
+article.toc > .container > h4 {
+    color:black;
+}
+h4 {
+    font-size:30px;
+    text-align: center;
+}
+
+a:hover {
+    background:#efe773;
+}
+
+
+hr {
+    width:10%;
+    text-align:center; margin: 0 auto;
+    border: 0;
+    height: 3px;
+    background: #333;
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+article.toc > .container > ul {
+    width:200px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+
+/* EXPERIMENTATION */
+
+
+/* general */
+article.experimentation >.container{
+    color:white;
+}
+
+article.experimentation >.container > p {
+    margin:7% 15%;
+    background:#303030;
+    padding:15px;
+}
+
+article.experimentation >.container > p > span {
+    font-size:20px;
+    font-weight: bold;
+}
+
+article.experimentation >.container > hr {
+    background:#2cacba;
+    margin-bottom: 0px;
+}
+
+/* experimentation headings */
+article >h4 {
+    position:absolute;
+    top:20px;
+    border: white 3px solid;
+    padding: 0 15px;
+    left:40px;
+    z-index:1000;
+}
+article>h3{
+    position:absolute;
+    z-index:1000;
+    text-align: left;
+    left:40px;
+    top:90px;
+}
+
+h3.secondthird{
+    top:20px;
+    position:absolute;
+}
+
+h3.mood {
+    background:black;
+    padding:0 10px;
+}
+
+h4.gap {
+    position:Absolute;
+    left:40px;
+    color:white;
+    border: white 3px solid;
+    margin-top: 20px;
+    padding:0 15px;
+    
+}
+/* top:20px;
+    border: white 3px solid;
+    padding: 0 15px;
+    left:40px; */
+.img-float {
+    width:100%;
+}
+
+.wrapper {
+  margin-top:0;
+  position: relative;
+  float:left;
+}
+
+.katie-container {
+    width:36%;
+}
+.dean-container {
+    width:64%;
+}
+
+.environment-container {
+    width:58%;
+}
+.collage-container {
+    width:42%;
+}
+
+.character-container {
+    width:50%;
+}
+
+.character-container > img {
+    border:5px black solid;
+}
+
+@media only screen and (max-width: 800px) {
+    .environment-container {
+    width:100%;
+}
+.collage-container {
+    width:100%;
+}
+}
+
+.static {
+  position:absolute;
+}
+
+.static:hover {
+  opacity:0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+/* development */
+
+
+p.attempt{
+    position:absolute;
+    font-weight: 700;
+    text-transform: uppercase;
+    z-index:1000;
+    top:20px;
+    padding:0 10px;
+    background:black;
+}
+
+.dev-container{
+    position:relative;
+    width:33.3%;
+    float:left;
+    background-color:#4f0063;
+}
+
+/* RESEARCH */
+
+article.gorillaz{
+    background-image: url("images/gorillaz.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article.coraline{
+    background-image: url("images/coraline.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article.batman{
+    background-image: url("images/batman.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+article.research > p {
+    position:absolute;
+    top:120px;
+    left:40px;
+}
+
